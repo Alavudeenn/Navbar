@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+          <a href="#"><img id="logo"src="logo.png" alt="Logo"></a>
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="navbar-search">
+          <input type="text" placeholder="Search">
+          <button type="submit">Search</button>
+        </div>
+        <div class="hamburger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="hidden-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Portfolio</a></li>
+          </ul>
+          <div class="navbar-search1">
+            <input type="text" placeholder="Search">
+            <button type="submit">Search</button>
+          </div>
+        </div>
+      </nav>
+     <header>
+      <div class="hc">
+        <h1>
+          <span class="o">O</span>rganic fresh fruits, <br> vegetables, foods <br> and others
+        </h1>
+        <p>
+          Satisfy your cravings with short videos and exciting <br> features. Order now!
+        </p>
+      </div>
+     </header>
+       
+</body>
+<script>
+    // Add JavaScript to toggle the hidden menu
+document.querySelector('.hamburger-menu').addEventListener('click', function() {
+  document.querySelector('.hidden-menu').classList.toggle('open');
+  document.querySelector('.hamburger-menu').style.position="absolute";
+  document.querySelector('.hamburger-menu').style.left="89%";
+  document.querySelector('.hamburger-menu').style.top="30px";
+  document.querySelector('#logo').position="relative";
+  document.querySelector('#logo').style.top="16px";
+  
+  
+});
+
+</script>
+</html>

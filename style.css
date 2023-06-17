@@ -1,0 +1,214 @@
+/* Navbar styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f1d2;
+  padding: 10px;
+}
+
+.navbar-logo {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.navbar-logo img {
+  max-height: 60px;
+
+}
+
+.navbar-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.navbar-links li {
+  margin-right: 10px;
+  padding-left: 10px;
+
+}
+
+
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 15px;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar-links li :hover {
+  color: #4f6500;
+  border-bottom: 2px solid #74b404;
+
+}
+
+.navbar-search input {
+  margin-right: 20px;
+}
+
+.navbar-search input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #74b404;
+}
+
+.navbar-search button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #74b404;
+  background-color: transparent;
+  color: #74b404;
+  margin-right: 20px;
+}
+
+.navbar-search button:hover {
+  background-color: #74b404;
+  color: white;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+.hidden-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 0px 1px rgb(67, 67, 67);
+}
+
+.hidden-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hidden-menu li {
+  padding: 10px;
+}
+
+.hidden-menu li :hover {
+  color: white;
+  border: 1px solid #74b404;
+  background-color: #73b404c4;
+  border-radius: 10px;
+
+}
+
+.hidden-menu a {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar-search1 input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #74b404;
+}
+
+.navbar-search1 button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #74b404;
+  background-color: transparent;
+  color: #74b404;
+}
+
+.navbar-search1 button:hover {
+  background-color: #74b404;
+  color: white;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    height: 64px;
+
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+
+  .navbar-search {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    text-align: right;
+
+  }
+
+  /* .navbar-logo img {
+    position: fixed;
+
+  } */
+
+  .open {
+    display: none;
+    margin-right: -2%;
+    margin-left: -2%;
+    margin-top: 276px;
+    padding: 10px;
+    background-color: #f4f1d2;
+    text-align: center;
+    width: 100%;
+  
+  }
+
+  .hidden-menu.open {
+    display: block;
+  }
+}
+
+
+
+/* HEADER */
+
+
+.hc {
+  width: 100%;
+  height: 50vh;
+  min-height: 350px;
+  background-image: url("bg.png");
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hc h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+
+}
+
+.o {
+  font-size: 50pt;
+}
